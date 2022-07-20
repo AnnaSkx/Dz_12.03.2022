@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 60px;
+}
+
+.active-field {
+  display: flex;
+  justify-content: space-between;
+}
+
+.active-field div {
+  border: 2px solid black;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.active-field div form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.active-field div.add-word {
+  display: flex;
+  flex-grow: 1;
+}
+
+.active-field div.add-word + div {
+  margin-left: 35px;
+}
+
+.active-field div.add-word input {
+  font-size: 20px;
+  border: none;
+  background-color: #EBEBEB;
+  width: 120px;
+  height: 30px;
+  border-radius: 25px;
+  color: black;
+  padding: 10px;
+}
+
+.active-field div.add-word input + input {
+  margin-left: 10px;
+}
+
+.active-field div.add-word button {
+  font-size: 20px;
+  border: none;
+  color: white;
+  width: 200px;
+  height: 50px;
+  background-color: #F39C12;
+  border-radius: 25px;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.active-field div.search input {
+  font-size: 20px;
+  border: none;
+  background-color: #EBEBEB;
+  height: 30px;
+  width: 400px;
+  border-radius: 25px;
+  color: black;
+  padding: 10px;
+}
+
+#word_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 100px;
+  column-gap: 80px;
+  row-gap: 60px;
+}
+
+#word_cards div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 100%;
+  border-radius: 20px;
+  position: relative;
+}
+
+#word_cards div p {
+  font-size: 50px;
+  display: none;
+}
+
+#word_cards div p.active {
+  display: block;
+}
+
+#word_cards div.cross {
+  position: absolute;
+  top: -25px;
+  right: -25px;
+  height: 50px;
+  width: 50px;
+  background-image: url("../media/cross.png");
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
